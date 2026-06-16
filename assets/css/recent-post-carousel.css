@@ -1,0 +1,29 @@
+.press-release-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.post-container a {
+  flex-shrink: 0;
+}
+
+.post-container img {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;  
+  max-width: 150px;   
+  object-fit: cover; 
+}
+
+.post-container p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
