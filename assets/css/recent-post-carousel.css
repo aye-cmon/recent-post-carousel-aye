@@ -1,29 +1,51 @@
-.press-release-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.rpc-carousel-wrap {
+	width: 100%;
 }
 
-.post-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.rpc-carousel {
+	position: relative;
+	width: 100%;
 }
 
-.post-container a {
-  flex-shrink: 0;
+.rpc-carousel .rpc-page-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
-.post-container img {
-  width: 150px;
-  height: 150px;
-  min-width: 150px;  
-  max-width: 150px;   
-  object-fit: cover; 
+.rpc-carousel .rpc-group {
+	width: 100%;
+	box-sizing: border-box;
 }
 
-.post-container p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
+.rpc-indicators {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	list-style: none;
+	margin: 14px 0 0;
+	padding: 0;
+}
+
+.rpc-indicators li {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #aaa;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	/* Reset any Bootstrap <ol><li> defaults */
+	text-indent: 0;
+}
+
+.rpc-indicators li.active {
+	background-color: #333;
+}
+
+.rpc-carousel-empty {
+	padding: 24px;
+	text-align: center;
+	color: #888;
+	border: 1px dashed #ccc;
 }
