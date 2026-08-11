@@ -90,7 +90,7 @@ function rpc_register_elements() {
 				'type'  => 'textfield',
 				'heading' => __( 'Group Date', 'rpc' ),
 				'param_name'  => 'group_date',
-				'value' => date( 'Y-m-d' ),
+				'value' => '',
 				'admin_label' => true,
 				'description' => __( 'Format YYYY-MM-DD. Newest date shows first.', 'rpc' ),
 			),
