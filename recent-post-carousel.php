@@ -26,6 +26,7 @@ function rpc_load_classes() {
 function rpc_register_elements() {
 	if ( ! function_exists( 'vc_map' ) ) { return; }
 
+	//Recent Post Carousel Aye (Grouped) container
 	vc_map( array(
 		'name'  => __( 'Recent Post Carousel Aye (Grouped)', 'rpc' ),
 		'base'  => 'rpc_carousel',
@@ -74,6 +75,7 @@ function rpc_register_elements() {
 		),
 	) );
 
+	//Carousel Group container (inner container)
 	vc_map( array(
 		'name'  => __( 'Carousel Group', 'rpc' ),
 		'base' => 'rpc_group',
